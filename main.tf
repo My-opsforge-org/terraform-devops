@@ -1,6 +1,10 @@
 provider "azurerm" {
   features {}
+
+  subscription_id = "a06745d9-354b-4624-b974-3dc2646c6d2e"
+  use_cli         = true
 }
+
 
 resource "azurerm_resource_group" "rg" {
   name     = "myResourceGroup"
